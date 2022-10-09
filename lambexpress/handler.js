@@ -13,6 +13,7 @@ module.exports.hello = async (event) => {
     ),
   };
   //https://www.serverless.com/blog/serverless-express-rest-api/
+  //https://blog.logrocket.com/going-serverless-node-js-apps/
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
   // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
