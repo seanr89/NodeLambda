@@ -1,5 +1,5 @@
 config:
-  target: "https://example.com/api"
+  target: "https://localhost:3000"
   phases:
     - duration: 60
       arrivalRate: 5
@@ -11,3 +11,7 @@ config:
     - duration: 600
       arrivalRate: 50
       name: Sustained load
+scenarios:
+  - flow:
+    - get:
+      url: "/hello

@@ -2,10 +2,11 @@
   "name": "lambexpress",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "app.js",
   "scripts": {
     "start": "sls offline start",
-    "deploy": "sls deploy -v"
+    "deploy": "sls deploy -v",
+    "makezip": "zip -r lambdaFunc.zip"
   },
   "author": "",
   "license": "ISC",

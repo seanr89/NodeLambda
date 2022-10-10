@@ -1,6 +1,5 @@
 service: lambexpress
 app: test-api
-#org: your-org-name
 
 plugins:
   - serverless-offline
@@ -12,6 +11,14 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs16.x
+  stage: dev
+  region: eu-west-1
+  memory: 256
+
+package:
+  patterns:
+    - '!.github/**'
+  excludeDevDependencies: false
 
 functions:
   app:
@@ -19,9 +26,3 @@ functions:
     events:
       - http: ANY /
       - http: 'ANY {proxy+}'  	
-# functions:
-#   app:
-#     handler: index.handler
-#     events:
-#       - http: ANY /
-#       - http: 'ANY {proxy+}'

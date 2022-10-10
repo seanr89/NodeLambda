@@ -1,5 +1,4 @@
-	
-// app.js
+'use strict';
  
 const serverless = require('serverless-http');
 const express = require('express')
